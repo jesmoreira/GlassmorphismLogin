@@ -117,11 +117,12 @@ section .color:nth-child(3) {
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 40px;
+    text-align: center;
 }
 .form h2::before {
     position: absolute;
     content: '';
-    left: 0;
+    left: 33px;
     bottom: -10px;
     width: 80px;
     height: 4px;
@@ -130,6 +131,7 @@ section .color:nth-child(3) {
 .form .inputBox {
     width: 100%;
     margin-top: 20%;
+    text-align: center;
 }
 
 .form .inputBox input {
@@ -151,20 +153,40 @@ section .color:nth-child(3) {
     color: #fff;
 }
 .form .inputBox input[type="submit"] {
-    background: #fff;
+    background: #FFF;
     color: #666;
     max-width: 100px;
     cursor: pointer;
     margin-bottom: 20px;
     font-weight: 600;
+    transition: all ease 1s;
 }
+
+.form .inputBox input[type="submit"]:hover{
+    background: linear-gradient(to left, rgba(241, 244, 249, 0.6), rgba(223, 241, 255, 0.6));
+    color: #FFF;
+}
+
+.form .inputBox input[type="text"]:focus,
+.form .inputBox input[type="password"]:focus {
+    background: linear-gradient(to left, rgba(241, 244, 249, 0.6), rgb(223, 241, 255, 0.6));
+}
+
 .forget {
     margin-top: 5px;
     color: #fff;
+    /* text-shadow: 2px 2px 0 #ffa7df, 2px -2px 0 #00d2ff, -2px 2px 0 #00d2ff, -2px -2px 0 #00d2ff, 2px 0px 0 #ffa7df, 0px 2px 0 #ffa7df, -2px 0px 0 #ffa7df, 0px -2px 0 #ffa7df; */
+    /* text-shadow: 1px 1px 1px #00d2ff; */
 }
 .forget a {
     color: #fff;
     font-weight: 600;
+    transition: all ease 1s;
+    /* text-shadow: 2px 2px 0 #ffa7df, 2px -2px 0 #00d2ff, -2px 2px 0 #00d2ff, -2px -2px 0 #00d2ff, 2px 0px 0 #ffa7df, 0px 2px 0 #ffa7df, -2px 0px 0 #ffa7df, 0px -2px 0 #ffa7df; */
+}
+
+.forget a:hover {
+    text-shadow: 1px 1px 1px #00d2ff;
 }
 
 @keyframes animate {
