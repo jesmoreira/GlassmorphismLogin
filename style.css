@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -22,12 +23,14 @@ section .color {
     position: absolute;
     filter: blur(150px);
 }
+
 section .color:nth-child(1) {
     top: -350px;
     width: 600px;
     height: 600px;
     background: #ff359b;
 }
+
 section .color:nth-child(2) {
     top: -150px;
     left: 100px;
@@ -35,6 +38,7 @@ section .color:nth-child(2) {
     height: 500px;
     background: #ffa7df;
 }
+
 section .color:nth-child(3) {
     top: 50px;
     right: 100px;
@@ -42,9 +46,11 @@ section .color:nth-child(3) {
     height: 300px;
     background: #00d2ff;
 }
+
 .box {
     position: relative;
 }
+
 .box .square {
     position: absolute;
     backdrop-filter: blur(5px);
@@ -57,12 +63,14 @@ section .color:nth-child(3) {
     animation: animate 10s linear infinite;
     animation-delay: calc(-1s * var(--i));
 }
+
 .box .square:nth-child(1) {
     top: -50px;
     right: -60px;
     width: 100px;
     height: 100px;
 }
+
 .box .square:nth-child(2) {
     top: 150px;
     left: -100px;
@@ -70,6 +78,7 @@ section .color:nth-child(3) {
     height: 120px;
     z-index: 2;
 }
+
 .box .square:nth-child(3) {
     bottom: 50px;
     right: -60px;
@@ -77,18 +86,21 @@ section .color:nth-child(3) {
     height: 80px;
     z-index: 2;
 }
+
 .box .square:nth-child(4) {
     bottom: -80px;
     left: 100px;
     width: 50px;
     height: 50px;
 }
+
 .box .square:nth-child(5) {
     top: -80px;
     left: 140px;
     width: 60px;
     height: 60px;
 }
+
 .container {
     position: relative;
     width: 400px;
@@ -104,12 +116,14 @@ section .color:nth-child(3) {
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.form{
+
+.form {
     position: relative;
     width: 100%;
     height: 100%;
     padding: 40px;
 }
+
 .form h2 {
     position: relative;
     color: #fff;
@@ -119,6 +133,7 @@ section .color:nth-child(3) {
     margin-bottom: 40px;
     text-align: center;
 }
+
 .form h2::before {
     position: absolute;
     content: '';
@@ -128,6 +143,7 @@ section .color:nth-child(3) {
     height: 4px;
     background: #fff;
 }
+
 .form .inputBox {
     width: 100%;
     margin-top: 20%;
@@ -149,9 +165,11 @@ section .color:nth-child(3) {
     color: #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
+
 .form .inputBox input::placeholder {
     color: #fff;
 }
+
 .form .inputBox input[type="submit"] {
     background: #FFF;
     color: #666;
@@ -162,7 +180,7 @@ section .color:nth-child(3) {
     transition: all ease 1s;
 }
 
-.form .inputBox input[type="submit"]:hover{
+.form .inputBox input[type="submit"]:hover {
     background: linear-gradient(to left, rgba(241, 244, 249, 0.6), rgba(223, 241, 255, 0.6));
     color: #FFF;
 }
@@ -178,6 +196,7 @@ section .color:nth-child(3) {
     /* text-shadow: 2px 2px 0 #ffa7df, 2px -2px 0 #00d2ff, -2px 2px 0 #00d2ff, -2px -2px 0 #00d2ff, 2px 0px 0 #ffa7df, 0px 2px 0 #ffa7df, -2px 0px 0 #ffa7df, 0px -2px 0 #ffa7df; */
     /* text-shadow: 1px 1px 1px #00d2ff; */
 }
+
 .forget a {
     color: #fff;
     font-weight: 600;
@@ -190,11 +209,13 @@ section .color:nth-child(3) {
 }
 
 @keyframes animate {
-    0%,100%
-{
-    transform: translateY(-40px);
-}
-50%
-{
-    transform: translateY(40px);
+
+    0%,
+    100% {
+        transform: translateY(-40px);
+    }
+
+    50% {
+        transform: translateY(40px);
+    }
 }
